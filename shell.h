@@ -12,12 +12,20 @@
 #include <fcntl.h>
 #include <errno.h>
 
+<<<<<<< HEAD
 /* for read/write buffers */
+=======
+/* read and write buffers */
+>>>>>>> 2fa4b66932ebe53cdad767212df224d9de52ea4f
 #define READ_BUF_SIZE 1024
 #define WRITE_BUF_SIZE 1024
 #define BUF_FLUSH -1
 
+<<<<<<< HEAD
 /* for command chaining */
+=======
+/* The command chaining */
+>>>>>>> 2fa4b66932ebe53cdad767212df224d9de52ea4f
 #define CMD_NORM	0
 #define CMD_OR		1
 #define CMD_AND		2
@@ -27,7 +35,11 @@
 #define CONVERT_LOWERCASE	1
 #define CONVERT_UNSIGNED	2
 
+<<<<<<< HEAD
 /* 1 if using system getline() */
+=======
+/* 1 when using the system getline() */
+>>>>>>> 2fa4b66932ebe53cdad767212df224d9de52ea4f
 #define USE_GETLINE 0
 #define USE_STRTOK 0
 
@@ -38,10 +50,17 @@ extern char **environ;
 
 
 /**
+<<<<<<< HEAD
  * struct liststr - lone-linked list
  * @num: the field for numbers
  * @str: a line
  * @next: points to the next node
+=======
+ * struct liststr - is a single linked list
+ * @num: the value of the field
+ * @str: a variable string
+ * @next: pointing at the next node
+>>>>>>> 2fa4b66932ebe53cdad767212df224d9de52ea4f
  */
 typedef struct liststr
 {
@@ -51,6 +70,7 @@ typedef struct liststr
 } list_t;
 
 /**
+<<<<<<< HEAD
  * struct passinfo - contains pseudo-arguements to pass into a function,
  * allowing uniform prototype for function pointer struct
  * @arg: a string generated from getline containing arguements
@@ -71,6 +91,28 @@ typedef struct liststr
  * @cmd_buf_type: CMD_type ||, &&, ;
  * @readfd: the fd from which to read line input
  * @histcount: the history line number count
+=======
+ * struct passinfo - it contains all arguements needed to be passed,
+ * allowing uniform prototype for pointer structer
+ * @arg: is a string that is generated from arguements
+ * @argv:is an array of strings generated from the argum
+ * @path: a string to the current command path
+ * @argc: is a argument counter
+ * @line_count: is an errorer counter
+ * @err_num: is an error code for exit()s
+ * @linecount_flag: a count in this line of input
+ * @fname: the prograsasdm filename
+ * @env: a linked list copy of environ
+ * @environ: a custom modifie copy of environ LL env
+ * @history: this is a history node
+ * @alias: the alias's noddae
+ * @env_changed: on if environ was changed
+ * @status: the return status of the last command
+ * @cmd_buf: address of pointer to cmd_buf, on if chaining
+ * @cmd_buf_type: CMD_type ||, &&, ;
+ * @readfd: the fd off how we input
+ * @histcount: a history line number counter
+>>>>>>> 2fa4b66932ebe53cdad767212df224d9de52ea4f
  */
 typedef struct passinfo
 {
@@ -100,8 +142,13 @@ typedef struct passinfo
 		0, 0, 0}
 
 /**
+<<<<<<< HEAD
  * struct builtin - includes an integrated string and related functions
  * @type: internal command flag
+=======
+ * struct builtin - it contains a builtin string related to function
+ * @type:a built conmnmand flag
+>>>>>>> 2fa4b66932ebe53cdad767212df224d9de52ea4f
  * @func: the function
  */
 typedef struct builtin
@@ -233,3 +280,7 @@ int replace_vars(info_t *);
 int replace_string(char **, char *);
 
 #endif
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2fa4b66932ebe53cdad767212df224d9de52ea4f
