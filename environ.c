@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _myenv - puts the currents env 
+ * _myenv - puts the currents env
  * @info: Structure of argciqn. Used to keep
  *          constant function prototype.
  * Return: daymn 0

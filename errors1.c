@@ -49,7 +49,7 @@ void print_error(info_t *info, char *estr)
 /**
  * print_d - a function that prints a deci (integer) num (base 10)
  * @input: the input
- * @fd: the filedescriptor to send and put to 
+ * @fd: the filedescriptor to send and put to
  *
  * Return: numb of charact to be printed inchallah
  */
