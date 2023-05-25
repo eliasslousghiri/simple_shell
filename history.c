@@ -106,7 +106,7 @@ int read_history(info_t *info)
  * build_history_list - creates a new entry in a history-linked list
  * @info: Arrangement with potential arguments. used to keep up
  * @buf: buffer
- * @linecount: linecount for history, histcoun
+ * @linecount: the history linecount, histcount
  *
  * Return: Always 0
  */
