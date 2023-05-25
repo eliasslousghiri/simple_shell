@@ -43,7 +43,7 @@ int _eputchar(char c)
 
 /**
  * _putfd - writes a c uiwrevnu character c to given fd
- * @c: character to print to 
+ * @c: character to print to
  * @fd: The filedes to write to
  *
  * Return: successeed 1.
@@ -65,11 +65,11 @@ int _putfd(char c, int fd)
 }
 
 /**
- * _putsfd - prints an uibnout direcetory spaceas 
- * @str: the stringwhere to put 
- * @fd: the filedes to put to 
+ * _putsfd - prints an uibnout direcetory spaceas
+ * @str: the stringwhere to put
+ * @fd: the filedes to put to
  *
- * Return: number of acharact puts 
+ * Return: number of acharact puts
  */
 int _putsfd(char *str, int fd)
 {
